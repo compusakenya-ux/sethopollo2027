@@ -8,7 +8,7 @@
 :root{--or:#F26A0B;--or-d:#C2520A;--bg:#FFFBF7;--sf:#fff;--tx:#231A14;--mu:#6B5B4F;--bd:#F1DFD1;--soft:#FFF0E3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#17110D;--sf:#221914;--tx:#F7EDE5;--mu:#B9A596;--bd:#3A2C22;--soft:#2B1D13}}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#17110D;--sf:#221914;--tx:#F7EDE5;--mu:#B9A596;--bd:#3A2C22;--soft:#2B1D13}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:115px}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em}
 a{color:inherit}.wrap{max-width:1080px;margin:auto;padding:0 20px}
@@ -19,7 +19,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 .lang{display:flex;border:1px solid var(--or);border-radius:99px;overflow:hidden}
 .lang button{border:0;background:none;color:var(--or);padding:5px 12px;font-weight:700;cursor:pointer}
 .lang button.on{background:var(--or);color:#fff}
-.mq{background:var(--or);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:.08em;padding:9px 0}
+.mq{position:sticky;top:calc(61px + env(safe-area-inset-top,0px));z-index:4;background:var(--or);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:.08em;padding:9px 0}
 .mq .tr{display:inline-flex;animation:mq 30s linear infinite}.mq .g{padding-right:3rem}
 @keyframes mq{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.mq .tr{animation:none}}
@@ -65,21 +65,30 @@ small{color:var(--mu);font-weight:400}
 footer{background:#2A1A0E;color:#F7EDE5;padding:32px 0;font-size:14px;text-align:center}footer b{color:var(--or)}
 .fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;background:#1FA855;color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 @media(max-width:760px){.hero .wrap,.two,form,.cal{grid-template-columns:1fr}.nav nav a{display:none}.ph.p{aspect-ratio:4/3}}
+#contact .grid{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:14px}#contact .card{padding:11px 12px;border-top-width:2px;border-radius:9px}#contact .ic{font-size:15px}#contact h3{font-size:12px;margin:.2em 0}#contact p{font-size:12px;line-height:1.4;margin:0;word-break:break-word}#contact h2{font-size:clamp(22px,3vw,28px)}
+.vtk{display:inline-flex;width:30px;height:30px;background:#1E5BD8;border-radius:7px;align-items:center;justify-content:center;vertical-align:middle;margin-right:8px}.vtk svg{width:20px;height:20px}
+.vb{display:flex;width:fit-content;align-items:center;gap:10px;background:#1E5BD8;color:#fff;padding:7px 16px 7px 7px;border-radius:10px;font-weight:700;margin-bottom:16px}.vb .vtk{background:#fff;margin:0;width:34px;height:34px}
+h2{text-align:center}h2::after{margin-left:auto;margin-right:auto}section .sub{margin-left:auto;margin-right:auto;text-align:center}
+.cal{grid-template-columns:1fr;max-width:920px;margin:28px auto 0;justify-items:center}.cb{width:100%;max-width:380px}
+.evs{width:100%;grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}.e{flex-direction:column;align-items:center;text-align:center;gap:6px;border-left:1px solid var(--bd);border-top:4px solid var(--or)}.e .d{min-width:0}
+#contact .card{text-align:center}
+.jg{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:stretch;margin-top:22px}.jg form{margin-top:0}.jp{min-height:320px}
+@media(max-width:760px){.jg{grid-template-columns:1fr}.jp{min-height:220px}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-<div class="logo"><span data-en="HON." data-sw="MHE."></span> SETH <b>OPOLLO</b></div>
-<nav><a href="#priorities" data-en="Priorities" data-sw="Vipaumbele"></a><a href="#events" data-en="Events" data-sw="Matukio"></a><a href="#join" data-en="Register" data-sw="Jisajili"></a>
+<div class="logo"><span class="vtk"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span data-en="HON." data-sw="MHE."></span> SETH <b>OPOLLO</b></div>
+<nav><a href="#priorities" data-en="Priorities" data-sw="Vipaumbele"></a><a href="#events" data-en="Events" data-sw="Matukio"></a><a href="#join" data-en="Register" data-sw="Jisajili"></a><a href="#contact" data-en="Contact Us" data-sw="Wasiliana Nasi"></a>
 <div class="lang"><button id="en" class="on">EN</button><button id="sw">SW</button></div></nav>
 </div></header>
 
 <div class="mq" aria-label="Jomvu Kuu 2027 Heri Seth"><div class="tr" id="tr"><div class="g" id="g">
-<span data-en="★ JOMVU KUU 2027 ★ HERI SETH — HONORABLE SETH IS THE BEST ★ JOMVU KUU 2027 ★ HERI SETH — HONORABLE SETH IS THE BEST" data-sw="★ JOMVU KUU 2027 ★ HERI SETH — MHESHIMIWA SETH NI BORA ★ JOMVU KUU 2027 ★ HERI SETH — MHESHIMIWA SETH NI BORA"></span></div></div></div>
+<span>JOMVU KUU 2027 ★ HON SETH OPOLLO ★ THE PEOPLE’S CHOICE ★ CHAGUO LA WANANCHI ★ VIJANA NA WAZEE ★ MHESH SETH OPOLLO ★ JOMVU KUU 2027 ★ HON SETH OPOLLO ★ THE PEOPLE’S CHOICE ★ CHAGUO LA WANANCHI ★ VIJANA NA WAZEE ★ MHESH SETH OPOLLO ★ </span></div></div></div>
 
 <div class="hero"><div class="wrap">
 <div>
-<span class="tag" data-en="I am your candidate for MCA · Jomvu Kuu Ward" data-sw="Mimi ni mgombea wako wa MCA · Wadi ya Jomvu Kuu"></span>
+<div class="vb"><span class="vtk"><svg viewBox="0 0 24 24" fill="none" stroke="#1E5BD8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>MCA-Jomvu Kuu Ward</span></div>
 <h1><span data-en="Honorable" data-sw="Mheshimiwa"></span> Seth <span class="o">Opollo</span></h1>
 <p class="motto">“Binadamu Mwenye Utu”</p>
 <p class="sub" data-en="I am running to serve every family in Jomvu Kuu: better schools, safer streets, thriving businesses and clean water for all. Together we will build a Mombasa County that works for you." data-sw="Ninagombea ili kuhudumia kila familia Jomvu Kuu: shule bora, usalama mitaani, biashara zinazostawi na maji safi kwa wote. Pamoja tutajenga Kaunti ya Mombasa inayokufaa."></p>
@@ -106,16 +115,16 @@ footer{background:#2A1A0E;color:#F7EDE5;padding:32px 0;font-size:14px;text-align
 <li data-en="I will deliver new boreholes, pipelines and water points" data-sw="Nitaleta visima, mabomba na vituo vipya vya maji"></li></ul></div>
 </div></div></section>
 
-<div class="band"><p>“Binadamu Mwenye Utu”<br><small style="color:#fff" data-en="A person with humanity: this is how I will lead" data-sw="Binadamu mwenye utu: hivi ndivyo nitakavyoongoza"></small></p></div>
+<div class="band"><p>Walking the Talk<br><small style="color:#fff;font-style:italic;font-size:.6em">Sisi Ni Kazi tu!!!</small></p></div>
 
 <section id="about"><div class="wrap">
 <h2 data-en="Meet Me" data-sw="Nifahamu"></h2>
 <div class="two" style="margin-top:28px">
 <div class="ph w">📷 <span data-en="PHOTO 2: Me with community members" data-sw="PICHA 2: Mimi na wanajamii"></span></div>
-<div class="ph w">📷 <span data-en="PHOTO 3: Campaign rally / school visit" data-sw="PICHA 3: Mkutano wa kampeni / ziara ya shule"></span></div>
+<div class="ph w">📷 <span data-en="PHOTO 3: Me with boda-boda riders / traders" data-sw="PICHA 3: Mimi na waendesha boda-boda / wafanyabiashara"></span></div>
 </div>
 <p class="sub" style="margin-top:22px;max-width:720px" data-en="[Add my story here: where I grew up, my work in Jomvu Kuu, and why I am running.]" data-sw="[Weka hadithi yangu hapa: nilikokulia, kazi yangu Jomvu Kuu, na sababu ya kugombea.]"></p>
-<div class="ph w" style="margin-top:18px;max-width:520px">📷 <span data-en="PHOTO 4 (optional): Me with boda-boda riders / traders" data-sw="PICHA 4 (hiari): Mimi na waendesha boda-boda / wafanyabiashara"></span></div>
+
 </div></section>
 
 <section id="events" style="background:var(--soft)"><div class="wrap">
@@ -135,7 +144,7 @@ footer{background:#2A1A0E;color:#F7EDE5;padding:32px 0;font-size:14px;text-align
 <section id="join" style="background:var(--soft)"><div class="wrap">
 <h2 data-en="Join Me: Register Your Support" data-sw="Jiunge Nami: Sajili Uungwaji Mkono Wako"></h2>
 <p class="sub" data-en="Fill in your details so I can reach you with campaign updates." data-sw="Jaza maelezo yako ili nikufikie na taarifa za kampeni."></p>
-<form id="f">
+<div class="jg"><div><form id="f">
 <label><span data-en="First Name" data-sw="Jina la Kwanza"></span><input name="fn" required></label>
 <label><span data-en="Last Name" data-sw="Jina la Mwisho"></span><input name="ln" required></label>
 <label><span data-en="ID Number" data-sw="Nambari ya Kitambulisho"></span><input name="id" inputmode="numeric" pattern="[0-9]{7,9}" required></label>
@@ -149,17 +158,26 @@ footer{background:#2A1A0E;color:#F7EDE5;padding:32px 0;font-size:14px;text-align
 <label><span data-en="Telephone Number" data-sw="Nambari ya Simu"></span><input name="tel" type="tel" placeholder="07XX XXX XXX" pattern="(\+254|0)[17][0-9]{8}" required></label>
 <div class="full"><button class="btn" type="submit" data-en="Register Now" data-sw="Jisajili Sasa"></button></div>
 </form>
-<div id="ok" data-en="Asante! Thank you for registering your support for Honorable Seth Opollo." data-sw="Asante! Umesajili uungwaji mkono wako kwa Mheshimiwa Seth Opollo."></div>
+<div id="ok" data-en="Asante! Thank you for registering your support for Honorable Seth Opollo." data-sw="Asante! Umesajili uungwaji mkono wako kwa Mheshimiwa Seth Opollo."></div></div>
+<div class="ph jp">📷 <span data-en="PHOTO 4: Campaign rally / school visit" data-sw="PICHA 4: Mkutano wa kampeni / ziara ya shule"></span></div></div>
 </div></section>
 
+<section id="contact"><div class="wrap"><h2 data-en="Contact Us" data-sw="Wasiliana Nasi"></h2>
+<div class="grid">
+<div class="card"><div class="ic">🌐</div><h3 data-en="Website" data-sw="Tovuti"></h3><p><a href="https://www.sethopollo.com" target="_blank" rel="noopener">www.sethopollo.com</a></p></div>
+<div class="card"><div class="ic">✉️</div><h3 data-en="Email" data-sw="Barua Pepe"></h3><p><a href="mailto:info@sethopollo.com">info@sethopollo.com</a><br><a href="mailto:support@sethopollo.com">support@sethopollo.com</a></p></div>
+<div class="card"><div class="ic">💬</div><h3>WhatsApp</h3><p><a data-wa href="#" target="_blank" rel="noopener">0712 000 345</a></p></div>
+<div class="card"><div class="ic">📘</div><h3>Facebook</h3><p><a href="https://www.facebook.com/SethOpollo2027" target="_blank" rel="noopener">SethOpollo2027</a></p></div>
+<div class="card"><div class="ic">▶️</div><h3>YouTube</h3><p><a href="https://www.youtube.com/@Sethopollo2027" target="_blank" rel="noopener">Sethopollo2027</a></p></div>
+</div></div></section>
 <footer><div class="wrap">
-<p><b>HON. SETH OPOLLO</b> · MCA Jomvu Kuu Ward · “Binadamu Mwenye Utu”</p>
-<p>Site by Poughkeepsie Limited · November 2026</p>
+<p><b>HON. SETH OPOLLO</b> · MCA Jomvu Kuu Ward · The People’s Choice</p>
+<p>Team Seth Opollo Copyright 2026</p>
 </div></footer>
 <a class="fab" data-wa href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
 
 <script>
-var lang="en",WA="254700000000",cm=new Date(2026,10,1);
+var lang="en",WA="254712000345",cm=new Date(2026,10,1);
 var EV=[
 ["2026-11-14","10:00","Community Town Hall","Mkutano wa Wananchi","Jomvu Kuu Primary School","Shule ya Msingi ya Jomvu Kuu"],
 ["2026-11-21","15:00","Boda-Boda Riders Forum","Kongamano la Waendesha Boda-Boda","Miritini World Bank Primary School","Shule ya Msingi ya Miritini World Bank"],
