@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Official Campaign Portal for Hon. Seth Opollo — MCA Candidate for Jomvu Kuu Ward, Mombasa County 2027. Better schools, safer streets, thriving small businesses, and clean water for all.">
+<meta name="theme-color" content="#E85D04">
+<title>Hon. Seth Opollo for MCA · Jomvu Kuu Ward 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --or: #E85D04;
+  --or-l: #F48C06;
+  --or-d: #BF4600;
+  --or-glow: rgba(232, 93, 4, 0.22);
+  --blue: #1D4ED8;
+  --blue-l: #EFF6FF;
+  --wa: #16A34A;
+  --wa-d: #15803D;
+  --bg: #FFFDF9;
+  --sf: #FFFFFF;
+  --sf-2: #FFF5EB;
+  --tx: #1C140D;
+  --mu: #5C4E43;
+  --bd: #EDE0D4;
+  --shadow-sm: 0 4px 16px rgba(28, 20, 13, 0.05);
+  --shadow-md: 0 12px 32px rgba(28, 20, 13, 0.08);
+  --shadow-lg: 0 24px 48px rgba(28, 20, 13, 0.14);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #120D0A;
+    --sf: #1C1510;
+    --sf-2: #261B13;
+    --tx: #F9F1EA;
+    --mu: #B8A698;
+    --bd: #36281E;
+    --blue-l: rgba(29, 78, 216, 0.2);
+    --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #120D0A;
+  --sf: #1C1510;
+  --sf-2: #261B13;
+  --tx: #F9F1EA;
+  --mu: #B8A698;
+  --bd: #36281E;
+  --blue-l: rgba(29, 78, 216, 0.2);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 118px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--tx);
+  font: 16px/1.65 'Plus Jakarta Sans', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Fraunces', Georgia, "Times New Roman", serif;
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header & Navigation */
+header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 100;
+  background: rgba(255, 253, 249, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--bd);
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background: rgba(18, 13, 10, 0.88);
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 16px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.logo b {
+  color: var(--or);
+}
+
+.vtk {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  background: var(--blue);
+  border-radius: 9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3);
+}
+
+.vtk svg {
+  width: 19px;
+  height: 19px;
+}
+
+.nav nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.nav nav a {
+  text-decoration: none;
+  color: var(--mu);
+  padding: 6px 2px;
+  position: relative;
+}
+
+.nav nav a:hover {
+  color: var(--or);
+}
+
+.nav nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--or);
+  transition: width 0.25s ease;
+}
+
+.nav nav a:hover::after {
+  width: 100%;
+}
+
+.lang {
+  display: inline-flex;
+  border: 1.5px solid var(--or);
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--sf);
+  padding: 2px;
+}
+
+.lang button {
+  border: 0;
+  background: none;
+  color: var(--tx);
+  padding: 5px 13px;
+  font-weight: 700;
+  font-size: 12.5px;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang button.on {
+  background: var(--or);
+  color: #fff;
+  box-shadow: 0 2px 8px var(--or-glow);
+}
+
+/* Marquee Ticker */
+.mq {
+  position: sticky;
+  top: calc(68px + env(safe-area-inset-top, 0px));
+  z-index: 90;
+  background: linear-gradient(90deg, var(--or-d), var(--or), var(--or-l), var(--or));
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  padding: 9px 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.mq .tr {
+  display: inline-flex;
+  animation: mq 32s linear infinite;
+}
+
+.mq .g {
+  padding-right: 3rem;
+}
+
+@keyframes mq {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mq .tr {
+    animation: none;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: linear-gradient(135deg, var(--or), var(--or-d));
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 99px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 15.5px;
+  box-shadow: 0 8px 22px var(--or-glow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(232, 93, 4, 0.35);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn.o {
+  background: var(--sf);
+  color: var(--or);
+  border: 2px solid var(--or);
+  box-shadow: none;
+}
+
+.btn.o:hover {
+  background: var(--sf-2);
+}
+
+.btn.wa {
+  background: linear-gradient(135deg, #22C55E, var(--wa));
+  box-shadow: 0 8px 22px rgba(22, 163, 74, 0.25);
+}
+
+.btn.wa:hover {
+  background: linear-gradient(135deg, var(--wa), var(--wa-d));
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.38);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(232, 93, 4, 0.10) 0%, transparent 45%),
+    radial-gradient(circle at 88% 80%, rgba(29, 78, 216, 0.08) 0%, transparent 45%),
+    linear-gradient(180deg, var(--sf-2) 0%, var(--bg) 100%);
+  padding: 64px 0 76px;
+  border-bottom: 1px solid var(--bd);
+  overflow: hidden;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.vb {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  background: var(--blue);
+  color: #fff;
+  padding: 6px 18px 6px 7px;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 13.5px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(29, 78, 216, 0.25);
+}
+
+.vb .vtk {
+  background: #fff;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+h1 {
+  font-size: clamp(38px, 5.5vw, 64px);
+  margin-bottom: 12px;
+}
+
+h1 .o {
+  color: var(--or);
+}
+
+.motto {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(20px, 2.5vw, 25px);
+  color: var(--or-d);
+  margin: 0 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.motto::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 3px;
+  background: var(--or);
+  border-radius: 2px;
+}
+
+.sub {
+  color: var(--mu);
+  font-size: 17px;
+  max-width: 580px;
+  margin: 0;
+}
+
+.cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.ward-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bd);
+  align-items: center;
+}
+
+.ward-pills span.lbl {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mu);
+  margin-right: 4px;
+}
+
+.ward-pill {
+  font-size: 12.5px;
+  font-weight: 600;
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  padding: 4px 12px;
+  border-radius: 99px;
+  color: var(--tx);
+}
+
+/* Hero Portrait Frame (Image 1) */
+.hero-portrait-wrap {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-portrait-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 16px -16px -16px 16px;
+  background: linear-gradient(135deg, var(--or), var(--blue));
+  border-radius: calc(var(--radius-lg) + 4px);
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.hero-card {
+  position: relative;
+  z-index: 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--sf);
+  border: 3px solid var(--sf);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-card img.p {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-badge-float {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(28, 20, 13, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--or);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero-badge-float strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.hero-badge-float span {
+  font-size: 12.5px;
+  color: #FDE68A;
+  font-weight: 600;
+}
+
+/* Generic Media Frames for All 4 Images */
+.media-card {
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--sf-2);
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.media-card:hover .media-frame img {
+  transform: scale(1.03);
+}
+
+.media-frame.w {
+  aspect-ratio: 3 / 2;
+}
+
+.media-frame.tall {
+  aspect-ratio: 3 / 4;
+}
+
+.media-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(28, 20, 13, 0.82);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 99px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.media-cap {
+  padding: 18px 22px;
+  border-top: 3px solid var(--or);
+  background: var(--sf);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.media-cap h3 {
+  font-size: 19px;
+  margin: 0 0 6px;
+  color: var(--tx);
+}
+
+.media-cap p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--mu);
+  line-height: 1.5;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+.sec-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 44px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--or);
+  background: var(--sf-2);
+  border: 1px solid var(--bd);
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  text-align: center;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--or), var(--or-l));
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+section .sub {
+  margin: 14px auto 0;
+  text-align: center;
+}
+
+/* Priorities Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.card {
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-top: 4px solid var(--or);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card .ic {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: var(--sf-2);
+  border: 1px solid var(--bd);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--mu);
+  font-size: 15px;
+}
+
+.card li {
+  margin: 8px 0;
+}
+
+.card li::marker {
+  color: var(--or);
+}
+
+/* Slogan Band */
+.band {
+  background: linear-gradient(135deg, #1E130C 0%, var(--or-d) 50%, var(--or) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 56px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.band p {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700;
+  margin: 0;
+  font-style: italic;
+}
+
+.band .band-sub {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 6px 20px;
+  border-radius: 99px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* About / Action Gallery (Images 2 & 3) */
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.story-box {
+  margin: 36px auto 0;
+  max-width: 880px;
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-left: 5px solid var(--or);
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.story-box p {
+  margin: 0;
+  font-size: 16.5px;
+  color: var(--tx);
+  line-height: 1.75;
+}
+
+/* Events & Calendar */
+.cal {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  max-width: 1040px;
+  margin: 36px auto 0;
+  align-items: start;
+}
+
+.cb {
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+}
+
+.ch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.ch button {
+  border: 1.5px solid var(--or);
+  background: var(--sf-2);
+  color: var(--or);
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.ch button:hover {
+  background: var(--or);
+  color: #fff;
+}
+
+.cg {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+  font-size: 13.5px;
+}
+
+.cg i {
+  font-style: normal;
+  color: var(--mu);
+  font-weight: 800;
+  font-size: 11.5px;
+  padding-bottom: 6px;
+}
+
+.cg span {
+  padding: 8px 0;
+  border-radius: 9px;
+  position: relative;
+  font-weight: 500;
+}
+
+.cg .ev {
+  background: var(--or);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 3px 10px var(--or-glow);
+}
+
+.cg .td {
+  outline: 2px solid var(--blue);
+  font-weight: 800;
+}
+
+.evs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.e {
+  display: flex;
+  gap: 16px;
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-left: 4px solid var(--or);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease;
+}
+
+.e:hover {
+  transform: translateY(-3px);
+}
+
+.e .d {
+  min-width: 58px;
+  height: 62px;
+  background: var(--sf-2);
+  border: 1px solid var(--bd);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--or);
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  flex-shrink: 0;
+}
+
+.e .d b {
+  display: block;
+  font-size: 24px;
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.e h3 {
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+
+.e p {
+  margin: 0;
+  color: var(--mu);
+  font-size: 13.5px;
+}
+
+/* WhatsApp Banner */
+.wab {
+  background: linear-gradient(135deg, var(--sf) 0%, var(--sf-2) 100%);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-lg);
+  padding: 44px 32px;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+}
+
+.wab-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  background: rgba(22, 163, 74, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+/* Register Support & Image 4 Layout */
+.jg {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 32px;
+  align-items: stretch;
+  margin-top: 32px;
+}
+
+form {
+  background: var(--sf);
+  border: 1px solid var(--bd);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 0;
+  box-shadow: var(--shadow-md);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13.5px;
+  font-weight: 700;
+  gap: 7px;
+  color: var(--tx);
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+input, select {
+  font: inherit;
+  font-size: 15px;
+  padding: 13px 14px;
+  border: 1.5px solid var(--bd);
+  border-radius: 11px;
+  background: var(--bg);
+  color: var(--tx);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--or);
+  box-shadow: 0 0 0 3px var(--or-glow);
+}
+
+#ok {
+  display: none;
+  background: #ECFDF5;
+  color: #065F46;
+  border: 2px solid #10B981;
+  padding: 18px 22px;
+  border-radius: 14px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+small {
+  color: var(--mu);
+  font-weight: 400;
+}
+
+/* Contact Cards */
+#contact .grid {
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+#contact .card {
+  padding: 22px 16px;
+  border-top-width: 3px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+#contact .ic {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#contact h3 {
+  font-size: 15px;
+  margin: 4px 0 6px;
+}
+
+#contact p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+  color: var(--mu);
+}
+
+#contact a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--or-d);
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #18100A;
+  color: #F7EDE5;
+  padding: 44px 0;
+  font-size: 14.5px;
+  text-align: center;
+  border-top: 4px solid var(--or);
+}
+
+footer b {
+  color: var(--or-l);
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+/* Floating WhatsApp CTA */
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 95;
+  background: linear-gradient(135deg, #22C55E, var(--wa));
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14.5px;
+  padding: 13px 22px;
+  border-radius: 99px;
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.55);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 920px) {
+  .hero .wrap,
+  .two,
+  .cal,
+  .jg {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 44px 0 56px;
+  }
+
+  .hero-portrait-wrap {
+    max-width: 400px;
+  }
+
+  .cb {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav nav a {
+    display: none;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">
+      <span class="vtk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+      </span>
+      <span><span data-en="HON." data-sw="MHE.">HON.</span> SETH <b>OPOLLO</b></span>
+    </a>
+    <nav>
+      <a href="#priorities" data-en="Priorities" data-sw="Vipaumbele">Priorities</a>
+      <a href="#about" data-en="In Action" data-sw="Kazini">In Action</a>
+      <a href="#events" data-en="Events" data-sw="Matukio">Events</a>
+      <a href="#join" data-en="Register" data-sw="Jisajili">Register</a>
+      <a href="#contact" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</a>
+      <div class="lang" role="group" aria-label="Language selector">
+        <button id="en" class="on" type="button">EN</button>
+        <button id="sw" type="button">SW</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mq" aria-label="Jomvu Kuu 2027 Heri Seth">
+  <div class="tr" id="tr">
+    <div class="g" id="g">
+      <span>JOMVU KUU 2027 ★ HON. SETH OPOLLO ★ THE PEOPLE’S CHOICE ★ CHAGUO LA WANANCHI ★ VIJANA NA WAZEE ★ MHESH SETH OPOLLO ★ SISI NI KAZI TU ★ JOMVU KUU 2027 ★ HON. SETH OPOLLO ★ THE PEOPLE’S CHOICE ★ CHAGUO LA WANANCHI ★ VIJANA NA WAZEE ★ MHESH SETH OPOLLO ★ </span>
+    </div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="vb">
+        <span class="vtk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+        </span>
+        <span data-en="MCA Candidate · Jomvu Kuu Ward 2027" data-sw="Mgombea wa MCA · Wadi ya Jomvu Kuu 2027">MCA Candidate · Jomvu Kuu Ward 2027</span>
+      </div>
+      <h1><span data-en="Honorable" data-sw="Mheshimiwa">Honorable</span> Seth <span class="o">Opollo</span></h1>
+      <p class="motto">“Binadamu Mwenye Utu”</p>
+      <p class="sub" data-en="I am running to serve every family in Jomvu Kuu: better schools, safer streets, thriving businesses and clean water for all. Together we will build a Mombasa County that works for you." data-sw="Ninagombea ili kuhudumia kila familia Jomvu Kuu: shule bora, usalama mitaani, biashara zinazostawi na maji safi kwa wote. Pamoja tutajenga Kaunti ya Mombasa inayokufaa.">I am running to serve every family in Jomvu Kuu: better schools, safer streets, thriving businesses and clean water for all. Together we will build a Mombasa County that works for you.</p>
+      <div class="cta">
+        <a class="btn" href="#join" data-en="Register as my supporter" data-sw="Jisajili kama mfuasi wangu">Register as my supporter</a>
+        <a class="btn wa" data-wa href="#" target="_blank" rel="noopener" data-en="Chat with me on WhatsApp" data-sw="Zungumza nami WhatsApp">Chat with me on WhatsApp</a>
+      </div>
+      <div class="ward-pills">
+        <span class="lbl" data-en="Serving All of Jomvu Kuu:" data-sw="Tukihudumia Jomvu Kuu Yote:">Serving All of Jomvu Kuu:</span>
+        <span class="ward-pill">Jomvu Kuu</span>
+        <span class="ward-pill">Aldina</span>
+        <span class="ward-pill">Miritini World Bank</span>
+        <span class="ward-pill">Mirironi</span>
+        <span class="ward-pill">Misufini</span>
+        <span class="ward-pill">Jitoni</span>
+        <span class="ward-pill">Narcol</span>
+      </div>
+    </div>
+
+    <div class="hero-portrait-wrap">
+      <div class="hero-card">
+        <img src="seth-official-1.jpg" width="896" height="1200" fetchpriority="high" decoding="async" alt="Hon. Seth Opollo portrait / Mheshimiwa Seth Opollo" class="p">
+        <div class="hero-badge-float">
+          <div>
+            <strong>Hon. Seth Opollo</strong>
+            <span data-en="The People's Choice · Jomvu Kuu 2027" data-sw="Chaguo la Wananchi · Jomvu Kuu 2027">The People's Choice · Jomvu Kuu 2027</span>
+          </div>
+          <span class="vtk" style="width:28px;height:28px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="priorities">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="eyebrow" data-en="Our 4-Point Pillar Plan" data-sw="Nguzo 4 za Maendeleo">Our 4-Point Pillar Plan</span>
+      <h2 data-en="My Campaign Priorities" data-sw="Vipaumbele vya Kampeni Yangu">My Campaign Priorities</h2>
+      <p class="sub" data-en="Practical, grassroots-first solutions designed for every household, youth, and trader across Jomvu Kuu Ward." data-sw="Suluhisho za vitendo zilizoundwa kwa ajili ya kila kaya, vijana na wafanyabiashara kote katika Wadi ya Jomvu Kuu.">Practical, grassroots-first solutions designed for every household, youth, and trader across Jomvu Kuu Ward.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🛡️</div>
+        <h3 data-en="Security" data-sw="Usalama">Security</h3>
+        <ul>
+          <li data-en="I will work for safer streets and better lighting in Jomvu, Aldina and Jitoni" data-sw="Nitafanya kazi kwa mitaa salama na taa bora Jomvu, Aldina na Jitoni">I will work for safer streets and better lighting in Jomvu, Aldina and Jitoni</li>
+          <li data-en="I will strengthen community policing partnerships" data-sw="Nitaimarisha ushirikiano wa polisi jamii">I will strengthen community policing partnerships</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ic">🎓</div>
+        <h3 data-en="Education" data-sw="Elimu">Education</h3>
+        <ul>
+          <li data-en="I will improve public school infrastructure: classrooms, desks, toilets and labs" data-sw="Nitaboresha miundombinu ya shule za umma: madarasa, madawati, vyoo na maabara">I will improve public school infrastructure: classrooms, desks, toilets and labs</li>
+          <li data-en="I will back bursaries and support for learners in need" data-sw="Nitaunga mkono basari na msaada kwa wanafunzi wenye uhitaji">I will back bursaries and support for learners in need</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ic">🏍️</div>
+        <h3 data-en="Small Business" data-sw="Biashara Ndogo">Small Business</h3>
+        <ul>
+          <li data-en="I will support the boda-boda industry: safe stages, licensing and SACCOs" data-sw="Nitasaidia sekta ya boda-boda: vituo salama, leseni na SACCO">I will support the boda-boda industry: safe stages, licensing and SACCOs</li>
+          <li data-en="I will stand with traders and make starting a business in Mombasa County seamless" data-sw="Nitasimama na wafanyabiashara na kurahisisha kuanzisha biashara Kaunti ya Mombasa">I will stand with traders and make starting a business in Mombasa County seamless</li>
+          <li data-en="I will push legislation to lower Single Business Permit (SBP) costs" data-sw="Nitasukuma sheria za kupunguza gharama za Kibali Kimoja cha Biashara (SBP)">I will push legislation to lower Single Business Permit (SBP) costs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ic">💧</div>
+        <h3 data-en="Clean Drinking Water" data-sw="Maji Safi ya Kunywa">Clean Drinking Water</h3>
+        <ul>
+          <li data-en="I will fight for reliable, safe and affordable water in every household" data-sw="Nitapigania maji ya uhakika, salama na nafuu kwa kila kaya">I will fight for reliable, safe and affordable water in every household</li>
+          <li data-en="I will deliver new boreholes, pipelines and water points" data-sw="Nitaleta visima, mabomba na vituo vipya vya maji">I will deliver new boreholes, pipelines and water points</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <p>Walking the Talk</p>
+  <span class="band-sub">Sisi Ni Kazi Tu!!!</span>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="eyebrow" data-en="Proven Track Record" data-sw="Rekodi ya Vitendo">Proven Track Record</span>
+      <h2 data-en="Meet Me: Leadership in Action" data-sw="Nifahamu: Uongozi kwa Vitendo">Meet Me: Leadership in Action</h2>
+      <p class="sub" data-en="Real service starts before election day. Here is how we are already standing with families, youth, and workers across Jomvu Kuu." data-sw="Huduma ya kweli huanza kabla ya siku ya uchaguzi. Hivi ndivyo tunavyosimama na familia, vijana na wafanyakazi kote Jomvu Kuu.">Real service starts before election day. Here is how we are already standing with families, youth, and workers across Jomvu Kuu.</p>
+    </div>
+
+    <div class="two">
+      <article class="media-card">
+        <div class="media-frame w">
+          <img src="seth-2.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Hon. Seth Opollo donating clean water to Jomvu residents / Mheshimiwa Seth Opollo akigawa maji safi kwa wakazi wa Jomvu">
+          <span class="media-tag" data-en="Clean Water Relief" data-sw="Huduma ya Maji Safi">Clean Water Relief</span>
+        </div>
+        <div class="media-cap">
+          <h3 data-en="Delivering Clean Water to Households" data-sw="Kusambaza Maji Safi kwa Wakazi">Delivering Clean Water to Households</h3>
+          <p data-en="Hon. Seth Opollo on the ground coordinating direct water boozer deliveries for families in Jomvu Kuu." data-sw="Mhe. Seth Opollo akishirikiana na wananchi kusambaza maji safi moja kwa moja kwa familia za Jomvu Kuu.">Hon. Seth Opollo on the ground coordinating direct water boozer deliveries for families in Jomvu Kuu.</p>
+        </div>
+      </article>
+
+      <article class="media-card">
+        <div class="media-frame w">
+          <img src="seth-3.jpg" width="1280" height="853" loading="lazy" decoding="async" alt="Hon. Seth Opollo empowering boda-boda riders and traders / Mheshimiwa Seth Opollo na waendesha boda-boda">
+          <span class="media-tag" data-en="Youth & Boda Empowerment" data-sw="Uwezeshaji wa Vijana na Boda">Youth & Boda Empowerment</span>
+        </div>
+        <div class="media-cap">
+          <h3 data-en="Empowering Boda-Boda Riders & Local Traders" data-sw="Kuwezesha Waendesha Boda-Boda na Wafanyabiashara">Empowering Boda-Boda Riders & Local Traders</h3>
+          <p data-en="Standing shoulder-to-shoulder with Jomvu Kuu boda-boda operators and small business owners to build sustainable livelihoods." data-sw="Kushirikiana bega kwa bega na waendesha boda-boda na wafanyabiashara wadogo wa Jomvu Kuu kukuza uchumi wao.">Standing shoulder-to-shoulder with Jomvu Kuu boda-boda operators and small business owners to build sustainable livelihoods.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="story-box">
+      <p data-en="Born and raised with deep roots in the community, Hon. Seth Opollo is a grassroots servant-leader known across Aldina, Jomvu Kuu, Mirironi, Miritini World Bank, and Narcol as “Binadamu Mwenye Utu” — a leader defined by humanity, empathy, and action. Whether delivering clean water during shortages, rehabilitating community access roads, or equipping boda-boda SACCOs and women groups, Seth leads from the front." data-sw="Akiwa na mizizi mirefu katika jamii, Mhe. Seth Opollo ni kiongozi mtumishi anayefahamika kote Aldina, Jomvu Kuu, Mirironi, Miritini World Bank, na Narcol kama “Binadamu Mwenye Utu” — kiongozi anayejali utu, huruma na vitendo. Iwe ni kusambaza maji safi wakati wa uhaba, kukarabati barabara za mitaani, au kuwezesha SACCO za boda-boda na vikundi vya akina mama, Seth anaongoza kwa mfano.">Born and raised with deep roots in the community, Hon. Seth Opollo is a grassroots servant-leader known across Aldina, Jomvu Kuu, Mirironi, Miritini World Bank, and Narcol as “Binadamu Mwenye Utu” — a leader defined by humanity, empathy, and action. Whether delivering clean water during shortages, rehabilitating community access roads, or equipping boda-boda SACCOs and women groups, Seth leads from the front.</p>
+    </div>
+  </div>
+</section>
+
+<section id="events" style="background:var(--sf-2)">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="eyebrow" data-en="Campaign Trail" data-sw="Ratiba ya Mikutano">Campaign Trail</span>
+      <h2 data-en="Come Meet Me: Upcoming Events" data-sw="Njoo Tukutane: Matukio Yajayo">Come Meet Me: Upcoming Events</h2>
+      <p class="sub" data-en="Join our ward town halls, listening forums, and community walks across Jomvu Kuu." data-sw="Jiunge na mikutano yetu ya wananchi, vikao vya kusikiliza maoni, na matembezi ya kijamii kote Jomvu Kuu.">Join our ward town halls, listening forums, and community walks across Jomvu Kuu.</p>
+    </div>
+    <div class="cal">
+      <div class="cb">
+        <div class="ch">
+          <button id="pv" type="button" aria-label="Previous month">‹</button>
+          <span id="mt"></span>
+          <button id="nx" type="button" aria-label="Next month">›</button>
+        </div>
+        <div class="cg" id="cg"></div>
+      </div>
+      <div class="evs" id="evs"></div>
+    </div>
+  </div>
+</section>
+
+<section id="chat">
+  <div class="wrap">
+    <div class="wab">
+      <div class="wab-icon">💬</div>
+      <h2 style="margin-bottom:.3em" data-en="Ask Me Anything on WhatsApp" data-sw="Niulize Chochote WhatsApp">Ask Me Anything on WhatsApp</h2>
+      <p class="sub" style="margin:0 auto 24px" data-en="My campaign desk answers your questions about my plans and events, day or night, in English or Kiswahili." data-sw="Ofisi ya kampeni yangu inajibu maswali yako kuhusu mipango na matukio yangu, mchana na usiku, kwa Kiingereza au Kiswahili.">My campaign desk answers your questions about my plans and events, day or night, in English or Kiswahili.</p>
+      <a class="btn wa" data-wa href="#" target="_blank" rel="noopener" data-en="Open WhatsApp Chat" data-sw="Fungua Gumzo la WhatsApp">Open WhatsApp Chat</a>
+    </div>
+  </div>
+</section>
+
+<section id="join" style="background:var(--sf-2)">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="eyebrow" data-en="Team Seth 2027" data-sw="Timu Seth 2027">Team Seth 2027</span>
+      <h2 data-en="Join Me: Register Your Support" data-sw="Jiunge Nami: Sajili Uungwaji Mkono Wako">Join Me: Register Your Support</h2>
+      <p class="sub" data-en="Fill in your details so I can reach you with campaign updates and polling station mobilization." data-sw="Jaza maelezo yako ili nikufikie na taarifa za kampeni na mipango ya kituo chako cha kura.">Fill in your details so I can reach you with campaign updates and polling station mobilization.</p>
+    </div>
+    <div class="jg">
+      <div>
+        <form id="f">
+          <label><span data-en="First Name" data-sw="Jina la Kwanza">First Name</span><input name="fn" required placeholder="e.g. Hassan"></label>
+          <label><span data-en="Last Name" data-sw="Jina la Mwisho">Last Name</span><input name="ln" required placeholder="e.g. Mwangi"></label>
+          <label><span data-en="ID Number" data-sw="Nambari ya Kitambulisho">ID Number</span><input name="id" inputmode="numeric" pattern="[0-9]{7,9}" required placeholder="12345678"></label>
+          <label><span data-en="Gender" data-sw="Jinsia">Gender</span>
+            <select name="g" required>
+              <option value="" data-en="Select…" data-sw="Chagua…">Select…</option>
+              <option value="M" data-en="Male" data-sw="Mwanamume">Male</option>
+              <option value="F" data-en="Female" data-sw="Mwanamke">Female</option>
+              <option value="O" data-en="Other" data-sw="Nyingine">Other</option>
+            </select>
+          </label>
+          <label class="full"><span data-en="Your Polling Station" data-sw="Kituo Chako cha Kupigia Kura">Your Polling Station</span>
+            <select name="ps" required>
+              <option value="" data-en="Select your polling station…" data-sw="Chagua kituo chako cha kupigia kura…">Select your polling station…</option>
+              <option>Miritini World Bank Primary School</option>
+              <option>Jomvu Kuu Primary School</option>
+              <option>Taratibu Social Hall</option>
+              <option>Mirironi Primary School</option>
+              <option>Jomvu Narcol Nursery School</option>
+              <option>Swaleh Khalid Social Hall</option>
+              <option>Nuru Community Based Rehabilitation</option>
+              <option>Badi Twalib Primary School</option>
+              <option>Aldinnah Open Grounds</option>
+              <option>Misufini Open Grounds</option>
+            </select>
+          </label>
+          <label><span data-en="Age" data-sw="Umri">Age</span><input name="age" type="number" min="18" max="120" required placeholder="25"></label>
+          <label><span data-en="Telephone Number" data-sw="Nambari ya Simu">Telephone Number</span><input name="tel" type="tel" placeholder="07XX XXX XXX" pattern="(\+254|0)[17][0-9]{8}" required></label>
+          <div class="full">
+            <button class="btn" type="submit" style="width:100%" data-en="Register Now" data-sw="Jisajili Sasa">Register Now</button>
+          </div>
+        </form>
+        <div id="ok" data-en="Asante! Thank you for registering your support for Honorable Seth Opollo." data-sw="Asante! Umesajili uungwaji mkono wako kwa Mheshimiwa Seth Opollo.">Asante! Thank you for registering your support for Honorable Seth Opollo.</div>
+      </div>
+
+      <article class="media-card">
+        <div class="media-frame tall" style="flex:1;min-height:320px;">
+          <img src="seth-4.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Hon. Seth Opollo overseeing road repairs in Jomvu Kuu / Mheshimiwa Seth Opollo akisimamia ukarabati wa barabara">
+          <span class="media-tag" data-en="Infrastructure Action" data-sw="Ukarabati wa Barabara">Infrastructure Action</span>
+        </div>
+        <div class="media-cap" style="flex:0">
+          <h3 data-en="Fixing Our Community Roads" data-sw="Kukarabati Barabara Zetu za Mitaani">Fixing Our Community Roads</h3>
+          <p data-en="On site supervising road grading and drainage improvements so matatus, boda-bodas, and residents can move safely." data-sw="Kusimamia ujazaji na ukarabati wa barabara ili matatu, boda-boda na wakazi wasafiri kwa usalama.">On site supervising road grading and drainage improvements so matatus, boda-bodas, and residents can move safely.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-header">
+      <span class="eyebrow" data-en="Stay Connected" data-sw="Wasiliana Nasi">Stay Connected</span>
+      <h2 data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="ic">🌐</div>
+        <h3 data-en="Website" data-sw="Tovuti">Website</h3>
+        <p><a href="https://www.sethopollo.com" target="_blank" rel="noopener">www.sethopollo.com</a></p>
+      </div>
+      <div class="card">
+        <div class="ic">✉️</div>
+        <h3 data-en="Email" data-sw="Barua Pepe">Email</h3>
+        <p><a href="mailto:info@sethopollo.com">info@sethopollo.com</a><br><a href="mailto:support@sethopollo.com">support@sethopollo.com</a></p>
+      </div>
+      <div class="card">
+        <div class="ic">💬</div>
+        <h3>WhatsApp</h3>
+        <p><a data-wa href="#" target="_blank" rel="noopener">0720 491 573</a></p>
+      </div>
+      <div class="card">
+        <div class="ic">📘</div>
+        <h3>Facebook</h3>
+        <p><a href="https://www.facebook.com/SethOpollo2027" target="_blank" rel="noopener">SethOpollo2027</a></p>
+      </div>
+      <div class="card">
+        <div class="ic">▶️</div>
+        <h3>YouTube</h3>
+        <p><a href="https://www.youtube.com/@Sethopollo2027" target="_blank" rel="noopener">Sethopollo2027</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>HON. SETH OPOLLO</b> · MCA Jomvu Kuu Ward · The People’s Choice</p>
+    <p>“Binadamu Mwenye Utu” · Sisi Ni Kazi Tu</p>
+    <p style="opacity:0.7;font-size:13px;margin-top:12px;">Team Seth Opollo © 2026–2027. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a class="fab" data-wa href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<script>
+var lang = "en", WA = "254720491573", cm = new Date(2026, 10, 1);
+var EV = [
+  ["2026-11-14", "10:00", "Community Town Hall", "Mkutano wa Wananchi", "Jomvu Kuu Primary School", "Shule ya Msingi ya Jomvu Kuu"],
+  ["2026-11-21", "15:00", "Boda-Boda Riders Forum", "Kongamano la Waendesha Boda-Boda", "Miritini World Bank Primary School", "Shule ya Msingi ya Miritini World Bank"],
+  ["2026-11-28", "09:00", "Traders & SBP Listening Session", "Kikao cha Wafanyabiashara na SBP", "Misufini Open Grounds", "Misufini Open Grounds"],
+  ["2026-12-05", "14:00", "Clean Water Community Walk", "Matembezi ya Maji Safi", "Aldinnah Open Grounds", "Aldinnah Open Grounds"],
+  ["2026-12-12", "11:00", "Schools & Parents Meeting", "Mkutano wa Shule na Wazazi", "Badi Twalib Primary School", "Shule ya Msingi ya Badi Twalib"]
+];
+var L = function () { return lang == "sw" ? "sw-KE" : "en-GB"; };
+function cal() {
+  var y = cm.getFullYear(), m = cm.getMonth(), h = "", i;
+  document.getElementById("mt").textContent = cm.toLocaleDateString(L(), { month: "long", year: "numeric" });
+  for (i = 0; i < 7; i++) h += "<i>" + new Date(2023, 0, 1 + i).toLocaleDateString(L(), { weekday: "narrow" }) + "</i>";
+  for (i = 0; i < new Date(y, m, 1).getDay(); i++) h += "<span></span>";
+  var n = new Date(y, m + 1, 0).getDate(), t = new Date();
+  for (i = 1; i <= n; i++) {
+    var k = y + "-" + String(m + 1).padStart(2, "0") + "-" + String(i).padStart(2, "0"), c = "";
+    if (EV.some(function (e) { return e[0] == k; })) c = "ev";
+    if (t.getFullYear() == y && t.getMonth() == m && t.getDate() == i) c += " td";
+    h += '<span class="' + c + '">' + i + "</span>";
+  }
+  document.getElementById("cg").innerHTML = h;
+  document.getElementById("evs").innerHTML = EV.map(function (e) {
+    var d = new Date(e[0] + "T00:00"), s = lang == "sw";
+    return '<div class="e"><div class="d"><b>' + d.getDate() + "</b>" + d.toLocaleDateString(L(), { month: "short" }) + '</div><div><h3>' + (s ? e[3] : e[2]) + "</h3><p>🕒 " + e[1] + " · 📍 " + (s ? e[5] : e[4]) + "</p></div></div>";
+  }).join("");
+}
+function setLang(l) {
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-en]").forEach(function (e) { e.textContent = e.getAttribute("data-" + l); });
+  document.getElementById("en").className = l == "en" ? "on" : "";
+  document.getElementById("sw").className = l == "sw" ? "on" : "";
+  var msg = l == "sw" ? "Habari Mheshimiwa Seth, nina swali kuhusu kampeni yako." : "Hello Honorable Seth, I have a question about your campaign.";
+  document.querySelectorAll("[data-wa]").forEach(function (a) { a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg); });
+  cal();
+}
+var g = document.getElementById("g");
+g.setAttribute("data-clone", "");
+var cl = g.cloneNode(true);
+cl.removeAttribute("id");
+cl.setAttribute("aria-hidden", "true");
+document.getElementById("tr").appendChild(cl);
+document.getElementById("en").onclick = function () { setLang("en"); };
+document.getElementById("sw").onclick = function () { setLang("sw"); };
+document.getElementById("pv").onclick = function () { cm.setMonth(cm.getMonth() - 1); cal(); };
+document.getElementById("nx").onclick = function () { cm.setMonth(cm.getMonth() + 1); cal(); };
+document.getElementById("f").onsubmit = function (e) {
+  e.preventDefault();
+  document.getElementById("ok").style.display = "block";
+  this.reset();
+  document.getElementById("ok").scrollIntoView({ behavior: "smooth", block: "center" });
+};
+setLang("en");
+</script>
+</body>
+</html>
