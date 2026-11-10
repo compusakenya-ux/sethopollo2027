@@ -1,0 +1,61 @@
+name: Deploy to Cloud Run
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  PROJECT_ID: ${{ vars.GCP_PROJECT_ID || 'sena-transit' }}
+  REGION: ${{ vars.GCP_REGION || 'me-central1' }}
+  SERVICE_NAME: ${{ vars.CLOUD_RUN_SERVICE || 'sethopollo2027' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Authenticate to Google Cloud
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+
+    - name: Ensure Artifact Registry Repository Exists
+      run: |
+        gcloud artifacts repositories describe cloud-run-source-deploy \
+          --location=${{ env.REGION }} --project=${{ env.PROJECT_ID }} || \
+        gcloud artifacts repositories create cloud-run-source-deploy \
+          --repository-format=docker \
+          --location=${{ env.REGION }} \
+          --description="Cloud Run Docker Repository" \
+          --project=${{ env.PROJECT_ID }}
+
+    - name: Configure Docker for Google Artifact Registry
+      run: |
+        gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev --quiet
+
+    - name: Build and Push Container Image
+      run: |
+        IMAGE="${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/cloud-run-source-deploy/${{ env.SERVICE_NAME }}:${{ github.sha }}"
+        docker build -t $IMAGE .
+        docker push $IMAGE
+        echo "IMAGE_TAG=$IMAGE" >> $GITHUB_ENV
+
+    - name: Deploy to Cloud Run (me-central1)
+      uses: google-github-actions/deploy-cloudrun@v2
+      with:
+        service: ${{ env.SERVICE_NAME }}
+        region: ${{ env.REGION }}
+        image: ${{ env.IMAGE_TAG }}
+        flags: '--allow-unauthenticated --port=8080'
+        env_vars: |
+          PORT=8080
+          CAMPAIGN_WHATSAPP_NUMBER=${{ vars.CAMPAIGN_WHATSAPP_NUMBER || '254720491573' }}
+          WHATSAPP_PHONE_NUMBER_ID=${{ vars.WHATSAPP_PHONE_NUMBER_ID || '' }}
+          WHATSAPP_TOKEN=${{ secrets.WHATSAPP_TOKEN || '' }}
+          WHATSAPP_VERIFY_TOKEN=${{ secrets.WHATSAPP_VERIFY_TOKEN || '' }}
