@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  PROJECT_ID: ${{ vars.GCP_PROJECT_ID || 'sena-transit' }}
+  PROJECT_ID: ${{ vars.GCP_PROJECT_ID || 'sethopollo2027' }}
   REGION: ${{ vars.GCP_REGION || 'me-central1' }}
   SERVICE_NAME: ${{ vars.CLOUD_RUN_SERVICE || 'sethopollo2027' }}
 
