@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  REGION: me-central1 # Change to your preferred GCP region (e.g., europe-west1)
+  REGION: africa-south1 # Change to your preferred GCP region (e.g., europe-west1)
   SERVICE_NAME: sethopollo2027  # Replace with your Cloud Run service name
 
 jobs:
